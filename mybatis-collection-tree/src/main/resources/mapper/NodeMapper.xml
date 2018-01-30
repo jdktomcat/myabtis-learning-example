@@ -17,21 +17,17 @@
   </resultMap>
 
   <sql id="Base_Column_List">
-		id, name
-	</sql>
+	  id, name
+  </sql>
 
   <select id="getNextNodeTree" resultMap="NextTreeResultMap">
-    SELECT
-    <include refid="Base_Column_List"/>
-    FROM node
-    WHERE parent_id = #{id}
+    SELECT <include refid="Base_Column_List"/>
+    FROM node WHERE parent_id = #{id}
   </select>
 
   <select id="getNodeTree" resultMap="BaseTreeResultMap">
-    SELECT
-    <include refid="Base_Column_List"/>
-    FROM node
-    WHERE parent_id = 0
+    SELECT <include refid="Base_Column_List"/>
+    FROM node WHERE parent_id = 0
   </select>
 
 </mapper>

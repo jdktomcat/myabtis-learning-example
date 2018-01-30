@@ -6,6 +6,7 @@ import java.util.List;
  * 节点实体类
  *
  * Created by bysocket on 24/01/2018.
+ * @author Administrator
  */
 public class Node {
 

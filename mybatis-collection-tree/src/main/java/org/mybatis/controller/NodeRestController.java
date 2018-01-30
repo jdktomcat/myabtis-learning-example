@@ -12,6 +12,7 @@ import java.util.List;
  * 节点业务控制成类
  *
  * Created by bysocket on 24/01/2018.
+ * @author Administrator
  */
 @RestController
 public class NodeRestController {
@@ -23,5 +24,4 @@ public class NodeRestController {
     public List<Node> getNodeTree() {
         return nodeService.getNodeTree();
     }
-
 }
